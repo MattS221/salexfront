@@ -8,14 +8,22 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(50, 50, 56, 1) 4%,
+    rgba(69, 69, 71, 1) 10%,
+    rgba(25, 25, 25, 1) 100%
+  );
 
   h3 {
-    color: ${props => props.theme.colors.primary};
+    color: #fff;
     font-size: 40px;
   }
 
   p {
-    color: ${props => props.theme.colors.text};
+    color: #fff;
     font-size: 15px;
     font-weight: 800;
     margin-top: 10px;
@@ -33,7 +41,7 @@ export const Container = styled.div`
     padding-left: 10px;
     border: none;
     border-radius: 10px;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.text};
     font-weight: 800;
   }
 
@@ -43,7 +51,7 @@ export const Container = styled.div`
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.text};
   }
 `
 
@@ -60,7 +68,7 @@ export const ButtonsContainer = styled.div`
     height: 2.5rem;
     border: none;
     border-radius: 10px;
-    background: ${props => props.theme.colors.primary};
+    background: rgba(255, 255, 255, 0.15);
     color: #fff;
     font-weight: 600;
     font-family: Roboto;
@@ -98,12 +106,17 @@ export const ButtonsSignUp = styled.div`
     border-radius: 10px;
     font-weight: 600;
     font-family: Roboto;
-    transiition: opacity 6ms;
+    transition: all 250ms linear 0s;
   }
 
   button:hover {
     opacity: 0.8;
     cursor: pointer;
+  }
+
+  #registro {
+    background: #fff;
+    color: #000;
   }
 
   #google {

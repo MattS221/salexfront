@@ -7,13 +7,12 @@ import {
   ButtonsSignUp
 } from '../styles/pages/Login'
 
-import LogoSVG from '../assets/OIM.png'
-
+import LogoSVG from '../assets/LogoSALEEX.png'
 const Login: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>OIW</title>
+        <title>Sale EX</title>
       </Head>
       <img src={LogoSVG} height="100px" />
       <h3>Entre com sua conta</h3>
@@ -34,6 +33,7 @@ const Login: React.FC = () => {
       </ButtonsContainer>
 
       <ButtonsSignUp>
+        <button id="registro">Registrar-se</button>
         <button id="google">Google</button>
         <button id="facebook">Facebook</button>
       </ButtonsSignUp>
